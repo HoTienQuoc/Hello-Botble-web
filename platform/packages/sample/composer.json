@@ -1,0 +1,19 @@
+{
+    "name": "botble/sample",
+    "description": "Sample package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Botble\\Sample\\": "src"
+        }
+    },
+    "require": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Botble\\Sample\\Providers\\SampleServiceProvider"
+            ]
+        }
+    }
+}

@@ -89,7 +89,7 @@ return [
     'chunk' => [
         'enabled' => env('RV_MEDIA_UPLOAD_CHUNK', false),
         'chunk_size' => 1024 * 1024, // Bytes
-        'max_file_size' => 1024 * 1024, // MB
+        'max_file_size' => 20 * 1024 * 1024, // MB
 
         /*
          * The storage config

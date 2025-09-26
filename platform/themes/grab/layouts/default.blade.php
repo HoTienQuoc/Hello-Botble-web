@@ -1,5 +1,3 @@
-
-
 {!! Theme::partial('header') !!}
 
 <main class="py-4">

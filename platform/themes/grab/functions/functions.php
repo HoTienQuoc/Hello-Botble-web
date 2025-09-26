@@ -3,6 +3,8 @@
 use Botble\Media\Facades\RvMedia;
 use Botble\Theme\Supports\ThemeSupport;
 
+
+
 register_page_template([
     'default' => __('Default'),
 ]);
@@ -19,4 +21,7 @@ app()->booted(function () {
     ThemeSupport::registerLazyLoadImages();
     ThemeSupport::registerSocialSharing();
     ThemeSupport::registerSiteLogoHeight();
+
 });
+
+

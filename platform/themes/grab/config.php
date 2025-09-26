@@ -38,6 +38,15 @@ return [
         // this event should call to assign some assets,
         // breadcrumb template.
         'beforeRenderTheme' => function (Theme $theme): void {
+            // Thêm file JS trong thư mục public/themes/[theme]/js
+            $theme->asset()->usePath()->add('core-js', 'js/script.js');
+
+            // Thêm file CSS
+            $theme->asset()->usePath()->add('core-css', 'css/style.css');
+
+            // Thêm thư viện jquery.min.js (thư mục public/js/libraries)
+            $theme->asset()->add('jquery', 'vendor/jquery/jquery.min.js');
+
             // Partial composer.
             // $theme->partialComposer('header', function($view) {
             //     $view->with('auth', \Auth::user());

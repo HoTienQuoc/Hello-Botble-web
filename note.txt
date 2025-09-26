@@ -1,0 +1,5 @@
+docker exec -it botble-cms-main-laravel.test bash
+composer install
+php artisan optimize:clear
+php artisan config:clear
+php artisan cache:clear

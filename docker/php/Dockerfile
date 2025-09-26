@@ -20,6 +20,9 @@ RUN apk add --no-cache \
 # Composer (nếu chưa có)
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
+COPY php.ini /usr/local/etc/php/
+
+
 # Tạo user sail để chạy app (giống Laravel Sail)
 ARG WWWUSER=1000
 ARG WWWGROUP=1000
